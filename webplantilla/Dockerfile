@@ -1,6 +1,6 @@
 # Dockerfile for webplantilla, based on web simple
 
-FROM node:16-alpine
+FROM node:20-alpine
 
 WORKDIR /app
 
