@@ -1,15 +1,5 @@
-# Dockerfile for webplantilla, based on web simple
+FROM nginx:alpine
 
-FROM node:20-alpine
+COPY . /usr/share/nginx/html
 
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
-
-COPY . .
-
-EXPOSE 3000
-
-CMD ["npm", "start"]
+EXPOSE 80
